@@ -25,7 +25,7 @@ def getAllReports():
 def downloadReport():
     if request.method == 'POST':
         res = downloadReportFromInput(request.form)
-        return send_file(res, as_attachment=True)
+        return jsonify(res)
 
     return render_template('download.html')
 
