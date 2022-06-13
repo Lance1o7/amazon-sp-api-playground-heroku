@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Create a Report</title>
+</head>
+<body>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="fs-4">SP-API Reports API Playground - Create a Report</span>
+        </a>
+    </header>
+</div>
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="alert alert-warning" role="alert">
+        Do not close the page if you haven't got what you want. Because you have to re-enter the credentials again!
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Credentials</h5>
+            <form action="" enctype='multipart/form-data' method='POST' target="_blank">
+                <div class="mb-3">
+                    <label for="refreshtoken" class="form-label">Refresh Token</label>
+                    <input type="password" name="refreshtoken" class="form-control"
+                           aria-describedby="passwordHelpBlock">
+                </div>
+
+                <div class="mb-3">
+                    <label for="appid" class="form-label">LWA App ID</label>
+                    <input type="password" name="appid" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+                <div class="mb-3">
+                    <label for="clientsecret" class="form-label">LWA Client Secret</label>
+                    <input type="password" name="clientsecret" class="form-control"
+                           aria-describedby="passwordHelpBlock">
+                </div>
+                <div class="mb-3">
+                    <label for="awssecret" class="form-label">AWS Secret Key</label>
+                    <input type="password" name="awssecret" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+                <div class="mb-3">
+                    <label for="awsaccess" class="form-label">AWS Access Key</label>
+                    <input type="password" name="awsaccess" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+
+                <div class="mb-3">
+                    <label for="rolearn" class="form-label">Role ARN</label>
+                    <input type="password" name="rolearn" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+
+                <div class="mb-3">
+                    <label for="reportPeriod" class="form-label">Report Period</label>
+                    <select name="reportPeriod" class="form-select" aria-label="reportPeriod">
+                        <option value="1">WEEK</option>
+                        <option value="2">DAY</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="distributorView" class="form-label">Distributor View</label>
+                    <select name="distributorView" class="form-select" aria-label="distributorView">
+                        <option value="1">MANUFACTURING</option>
+                        <option value="2">SOURCING</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="sellingProgram" class="form-label">Selling Program</label>
+                    <select name="sellingProgram" class="form-select" aria-label="sellingProgram">
+                        <option value="1">RETAIL</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="ReportType" class="form-label">Report Type</label>
+                    <select name="ReportType" class="form-select" aria-label="ReportType">
+                        <option value="1">GET_VENDOR_SALES_REPORT</option>
+                        <option value="2">GET_VENDOR_INVENTORY_REPORT</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="startTime" class="form-label">Start Time</label>
+                    <input type="text" class="form-control" name="startTime" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Please use the ISO 8601 format</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="endTime" class="form-label">End Time</label>
+                    <input type="text" class="form-control" name="endTime" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Please use the ISO 8601 format</div>
+                </div>
+
+                <input type="submit" class="btn btn-success" value="Create a Report">
+
+
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

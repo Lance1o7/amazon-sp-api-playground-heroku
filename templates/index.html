@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>SP-API Reports API Playground</title>
+</head>
+<body>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="fs-4">SP-API Reports API Playground - Beta</span>
+        </a>
+    </header>
+</div>
+
+
+<div class="container">
+    <h6>Introduction</h6>
+    <p>This is a simple application to help you test the SP-API. The application does not save any credentials on the
+        server.</p>
+    <div class="mb-3">
+        <h6>(Optional) Install the JSON Formatter Browser Extension</h6>
+
+        <p>With this extension, you can print JSON and JSONP nicely when you visit it 'directly' in a browser tab.</p>
+        <a class="btn btn-success" href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa" role="button" target="_blank">Chrome Web Store</a>
+    </div>
+    <div class="mb-3">
+        <h6>Step 1</h6>
+        <p>Click the button and fill out the form. After you see "Successfully create the report", go to Step
+            2.</p>
+        <a class="btn btn-primary" href="create" role="button" target="_blank">Create a Report</a>
+    </div>
+    <div class="mb-3">
+        <h6>Step 2</h6>
+        <p>Click the button and fill out the form. After you see your report's status is DONE, copy the reportDocumentId of your report, and go to Step 3.</p>
+        <a class="btn btn-primary" href="get" role="button" target="_blank">Get All Reports</a>
+    </div>
+    <div class="mb-3">
+        <h6>Step 3</h6>
+        <p>Click the button and fill out the form. Then you will get the JSON file.</p>
+        <a class="btn btn-primary" href="download" role="button" target="_blank">Download a Report</a>
+    </div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

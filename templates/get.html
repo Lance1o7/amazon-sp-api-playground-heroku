@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Get All Reports</title>
+</head>
+<body>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="fs-4">SP-API Reports API Playground - Get All Reports</span>
+        </a>
+    </header>
+</div>
+<div class="container">
+    <div class="alert alert-warning" role="alert">
+        Do not close the page if you haven't got what you want. Because you have to re-enter the credentials again!
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Credentials</h5>
+            <form action="" enctype='multipart/form-data' target="_blank" method='POST'>
+                <div class="mb-3">
+                    <label for="refreshtoken" class="form-label">Refresh Token</label>
+                    <input type="password" name="refreshtoken" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+
+                <div class="mb-3">
+                    <label for="appid" class="form-label">LWA App ID</label>
+                    <input type="password" name="appid" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+                <div class="mb-3">
+                    <label for="clientsecret" class="form-label">LWA Client Secret</label>
+                    <input type="password" name="clientsecret" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+                <div class="mb-3">
+                    <label for="awssecret" class="form-label">AWS Secret Key</label>
+                    <input type="password" name="awssecret" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+                <div class="mb-3">
+                    <label for="awsaccess" class="form-label">AWS Access Key</label>
+                    <input type="password" name="awsaccess" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+
+                <div class="mb-3">
+                    <label for="rolearn" class="form-label">Role ARN</label>
+                    <input type="password" name="rolearn" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+
+
+                <input type="submit" class="btn btn-success" value="Get All Reports">
+
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
